@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เงินเทอร์โบ - ระบบวิเคราะห์สินเชื่อ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="landing-content">
+            <div class="logo-container">
+                <h1 class="main-title">
+                    <span class="title-line">วิเคราะห์ลูกค้า แบบว้าวซ่า</span>
+                    <span class="title-line">ไม่พลาดท่า ปล่อยหนี้เสีย</span>
+                </h1>
+            </div>
+            <div class="button-container">
+                <button id="employee-btn" class="glow-button">พนักงานวิเคราะห์สินเชื่อ</button>
+                <button id="admin-btn" class="glow-button">Admin</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Employee Login Modal -->
+    <div id="employee-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>โปรดกรอกรหัสพนักงาน</h2>
+            <input type="text" id="employee-id" placeholder="รหัสพนักงาน 8 หลัก เช่น 00003890" maxlength="8">
+            <p id="employee-error" class="error-message"></p>
+            <button id="employee-login" class="glow-button">เข้าสู่ระบบ</button>
+        </div>
+    </div>
+
+    <!-- Admin Login Modal -->
+    <div id="admin-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Admin Login</h2>
+            <input type="password" id="admin-password" placeholder="รหัสผ่าน">
+            <p id="admin-error" class="error-message"></p>
+            <button id="admin-login" class="glow-button">เข้าสู่ระบบ</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="copyright">Ngernturbo Plc, 2025</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

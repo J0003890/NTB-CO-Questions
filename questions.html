@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เงินเทอร์โบ - คำถาม</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <button id="back-btn" class="glow-button back-button">← กลับไปหน้าเลือกอาชีพ</button>
+        
+        <h1 id="occupation-title">คำถามสำหรับ: <span id="occupation-name"></span></h1>
+        
+        <div class="questions-container">
+            <div class="questions-box">
+                <!-- Mandatory Questions Section -->
+                <div class="question-section">
+                    <h3>คำถามหลัก (จำเป็นต้องถาม)</h3>
+                    <div class="question-list" id="mandatory-questions">
+                        <div class="question-item">
+                            <input type="checkbox" class="question-checkbox mandatory-question" id="mandatory-1">
+                            <label for="mandatory-1" class="question-text">รายได้ของลูกค้า</label>
+                        </div>
+                        <div class="question-item">
+                            <input type="checkbox" class="question-checkbox mandatory-question" id="mandatory-2">
+                            <label for="mandatory-2" class="question-text">ภาระหนี้สิน</label>
+                        </div>
+                        <div class="question-item">
+                            <input type="checkbox" class="question-checkbox mandatory-question" id="mandatory-3">
+                            <label for="mandatory-3" class="question-text">เงินที่เหลือเก็บต่อเดือน</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Occupation-specific Questions Section -->
+                <div class="question-section">
+                    <h3>คำถามเฉพาะอาชีพ</h3>
+                    <div class="question-list" id="occupation-questions">
+                        <!-- Questions will be loaded dynamically -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Traffic Light -->
+            <div class="traffic-light-container">
+                <div class="traffic-light">
+                    <div class="light red active" id="red-light"></div>
+                    <div class="light yellow" id="yellow-light"></div>
+                    <div class="light green" id="green-light"></div>
+                </div>
+                <div id="traffic-message" class="traffic-message"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="copyright">Ngernturbo Plc, 2025</div>
+    </footer>
+
+    <script src="questions-data.js"></script>
+    <script src="questions.js"></script>
+</body>
+</html>

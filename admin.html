@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เงินเทอร์โบ - Admin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="admin-dashboard">
+        <div class="admin-header">
+            <h1>Admin Dashboard</h1>
+            <button id="back-to-home" class="glow-button">← กลับไปหน้าหลัก</button>
+        </div>
+        
+        <div class="admin-section">
+            <h2>บันทึกการใช้งานระบบ</h2>
+            <table class="admin-table">
+                <thead>
+                    <tr>
+                        <th>รหัสพนักงาน</th>
+                        <th>การกระทำ</th>
+                        <th>รายละเอียด</th>
+                        <th>เวลา</th>
+                    </tr>
+                </thead>
+                <tbody id="log-table-body">
+                    <!-- Log data will be loaded here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="copyright">Ngernturbo Plc, 2025</div>
+    </footer>
+
+    <script src="admin.js"></script>
+</body>
+</html>
